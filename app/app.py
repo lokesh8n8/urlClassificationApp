@@ -40,7 +40,7 @@ def extract_url_features(url):
 
 @st.cache_resource 
 def load_model():
-    with open("C:/Users/KIIT/Documents/Codes/url_classification/models/trained_model_v2.pkl", "rb") as f:
+    with open("models\trained_model_v2.pkl", "rb") as f:
         return pickle.load(f)
 
 model = load_model()
